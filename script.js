@@ -14,7 +14,8 @@ const showData= async (blogData) =>{
     blogg.classList.add('post');
     blogg.innerHTML=`
     <h3>${item.title}</h3>
-    <p>${item.body}</p>`
+    <p>${item.body}</p>
+    <a href="blog.html?id=${item.id}">Read More...</a>`
     blog.appendChild(blogg);
   });
   
