@@ -6,7 +6,7 @@
 }
 /* Header */
 .header {
-  background: linear-gradient(to bottom, blue, purple);
+  background: linear-gradient(to bottom, #6e99ea, #847ceb);
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -21,12 +21,18 @@
   gap: 10px;
   margin: 20px auto;
 }
+h1{
+  text-align: center;
+  padding: 10px;
+  color:  #6e99ea;
+}
 
 .post {
+  background: linear-gradient(to left, #6e99ea, #847ceb);
   border: transparent;
   padding: 15px;
-  color: rgb(53, 52, 52);
-  border: 1px solid rgb(48, 47, 47);
+  color: white;
+  border: transparent;
   margin-bottom: 10px;
   border-radius: 6px;
   align-items: center;
@@ -44,7 +50,7 @@
 }
 .post a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .post .date {
   font-size: 0.9em;
