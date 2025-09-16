@@ -6,7 +6,7 @@
 }
 /* Header */
 .header {
-  background: rgb(56, 54, 54);
+  background: linear-gradient(to bottom, blue, purple);
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -29,6 +29,7 @@
   border: 1px solid rgb(48, 47, 47);
   margin-bottom: 10px;
   border-radius: 6px;
+  align-items: center;
   display: grid;
   gap: 8px;
 }
@@ -42,7 +43,7 @@
   text-overflow: ellipsis;
 }
 .post a{
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
 }
 .post .date {
@@ -54,7 +55,9 @@
   padding: 20px;
   margin: 20px auto;
 }
-.blogdetail p{
+.blogdetail article{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   font-size: 20;
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -5,16 +5,11 @@ getData();
 async function getData() {
   var query = new URLSearchParams(window.location.search);
   var parameter = Object.fromEntries(query.entries());
-
-  // if (!parameter.id) {
-  //   blogDetail.innerHTML = "<p>No blog ID provided.</p>";
-  //   return;
-  // }
-
   var data = await fetch(URL + parameter.id);
   var blogd = await data.json();
 
   blogDetail.innerHTML = `
     <h2>${blogd.title}</h2>
-    <p>${blogd.body}</p>`;
+    <article>${blogd.body}</article>`;
+    
 }
